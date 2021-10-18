@@ -13,11 +13,11 @@ import org.junit.jupiter.api.Test;
  */
 public class TestCalculadora
 {
+    private Calculadora calculadora;
     /**
      * Default constructor for test class TestCalculadora
      */
-    public TestCalculadora()
-    {
+    public TestCalculadora() {
     }
 
     /**
@@ -26,8 +26,8 @@ public class TestCalculadora
      * Called before every test case method.
      */
     @BeforeEach
-    public void setUp()
-    {
+    public void setUp() {
+        calculadora = new Calculadora();
     }
 
     /**
@@ -38,5 +38,11 @@ public class TestCalculadora
     @AfterEach
     public void tearDown()
     {
+    }
+
+    @Test
+    public void jerarquia() {
+        char expresion = (char)calculadora.jerarquia("2 + 5 - 2");
+        assertEquals('+', expresion);
     }
 }

@@ -1,33 +1,25 @@
 
-/**
- * Write a description of class Calculadora here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
-public class Calculadora
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Calculadora
-     */
-    public Calculadora()
-    {
-        // initialise instance variables
-        x = 0;
+public class Calculadora {
+    public char jerarquia(String expresion) {
+        char op = ' ';
+        for (int i = 0; i<expresion.length(); i++) {
+            if (operador(expresion.charAt(i))) {
+                if (comparar(op, expresion.charAt(i))) {
+                    op = expresion.charAt(i);
+                }
+            }
+        }
+        return op;
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    
+    public boolean operador(char a) {
+        return (a >= 42 && a <= 47);        
+    }
+    
+    public boolean comparar(char a, char b) {
+        if (b == '*' || b == '/' || a == ' ') {
+            return true;
+        }
+        return false;
     }
 }
