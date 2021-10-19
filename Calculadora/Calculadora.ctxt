@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Calculadora
+comment1.params=min\ max
+comment1.target=Calculadora(int,\ int)
+comment2.params=a\ b
+comment2.target=int\ sumar(int,\ int)
+comment3.params=a\ b
+comment3.target=int\ restar(int,\ int)
+comment4.params=
+comment4.target=int\ getM\u00EDnimo()
+comment5.params=
+comment5.target=int\ getM\u00E1ximo()
+comment6.params=limiteInferior\ limiteSuperior
+comment6.target=void\ setNuevosLimites(int,\ int)
+comment7.params=a\ b
+comment7.target=boolean\ validarPar\u00E1metros(int,\ int)
+numComments=8

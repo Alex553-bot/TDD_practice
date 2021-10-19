@@ -13,7 +13,7 @@ public class Calculadora
         validarParámetros(a, b);
         int result = (a+b);
         if (result>límiteMáx) {
-            throw RuntimeException(
+            throw new RuntimeException(
                 "el resultado excede al limite superior");
         }
         return result; 
